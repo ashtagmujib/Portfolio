@@ -586,6 +586,7 @@ header div {
     margin: 50px 25%;
 
     text-transform: uppercase;
+    color: var(--black);
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
@@ -654,7 +655,7 @@ header div {
 .previous-projects {
     width: 100%;
     height: auto;
-    padding: 20px 100px;
+    padding: 20px 20px;
     margin: 200px 0;
 
     display: flex;
@@ -664,7 +665,7 @@ header div {
 }
 
 .previous-projects p {
-    width: 50%;
+    width: 40%;
     padding: 10px 0;
     text-align: center;
     text-transform: uppercase;
@@ -685,7 +686,7 @@ header div {
     position: relative;
 
     display:flex;
-    gap: 50px;
+    gap: 20px;
     overflow-x: scroll;
     flex-wrap: nowrap;
     scroll-snap-type: x mandatory;
@@ -777,7 +778,7 @@ header div {
 
 
 .slide-direction {
-    width: 30%;
+    width: 20%;
     height: 30px;
 
     display: flex;
@@ -855,7 +856,7 @@ header div {
 
 @media (min-width:415px) and (max-width:912px) {
     .previous-projects {
-        padding: 20px;
+        padding: 20px 100px;
         margin: 150px 0;
     }
 
@@ -883,7 +884,7 @@ header div {
 
     .slide .image {
         width: 600px;
-        height: 150px;
+        height: 230px;
     }
 
     .slide h3 {
@@ -906,7 +907,7 @@ header div {
     }
 
     #live-site {
-        width: 200px;
+        width: 400px;
     }
 
 
@@ -947,6 +948,29 @@ footer {
     padding: 10px 30px;
     background-image: linear-gradient(to bottom right, #8801DB, #0195F7);
     border-radius: 30px;
+
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+
+.contact-address a div img{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+.contact-address a div svg {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+
+.contact-address a div svg path {
+    fill: var(--black);
 }
 
 .contact-address a {
@@ -964,6 +988,12 @@ footer {
 
 .contact-address a #linkedtr {
     width:60%;
+}
+
+#x p, #gmail p, #linkedtr p{
+    color: var(--black);
+    margin: 0;
+    font-size: 13px;
 }
 
 
