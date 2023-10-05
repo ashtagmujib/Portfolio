@@ -954,23 +954,10 @@ footer {
     justify-content: flex-start;
 }
 
-
-.contact-address a div img{
-    width: 30px;
-    height: 30px;
-    margin-right: 10px;
-}
-
-
 .contact-address a div svg {
     width: 30px;
     height: 30px;
     margin-right: 10px;
-}
-
-
-.contact-address a div svg path {
-    fill: var(--black);
 }
 
 .contact-address a {
