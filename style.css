@@ -1014,7 +1014,7 @@ footer {
 
 .contact-address a div {
     margin-bottom: 20px;
-    padding: 10px 30px;
+    padding: 10px;
     background-image: linear-gradient(to bottom right, #8801DB, #0195F7);
     border-radius: 30px;
 
@@ -1025,8 +1025,8 @@ footer {
 
 .contact-address a div svg {
     width: 30px;
-    height: 30px;
-    margin-right: 10px;
+    height: 15px;
+    margin-right: 5px;
 }
 
 .contact-address a {
