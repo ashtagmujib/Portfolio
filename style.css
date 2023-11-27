@@ -40,7 +40,7 @@ body {
 
 @media (max-width:414px) {
     body {
-        width: 414px;
+        width: 100%;
         height: auto;
     }
 }
