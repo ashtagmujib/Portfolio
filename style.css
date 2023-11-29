@@ -38,9 +38,9 @@ body {
     height: auto;
 }
 
-@media (max-width:414px) {
+@media (max-width:430px) {
     body {
-        width: 414px;
+        width: 375px;
         height: auto;
     }
 }
@@ -121,7 +121,7 @@ header div {
 }
 
 
-@media (max-width:414px) {
+@media (max-width:430px) {
     header {
         padding: 20px;
     }
@@ -204,7 +204,7 @@ header div {
 }
 
 
-@media (max-width:414px) {
+@media (max-width:430px) {
     .introduction {
         margin-top: 30px;
         margin-bottom: 0;
@@ -270,7 +270,7 @@ header div {
     content: '';
     position: absolute;
     top: -10px;
-    right: 5px;
+    right: 80px;
 
     width: 60px;
     height: 60px;
@@ -287,7 +287,7 @@ header div {
 
     position: absolute;
     top: 0;
-    right: 20px;
+    right: 100px;
     animation: animateball 4s ease-in-out infinite;
 }
 
@@ -386,7 +386,7 @@ header div {
     font-style: normal;
 }
 
-@media (max-width:414px) {
+@media (max-width:430px) {
     .about-me {
         margin-top: 100px;
         padding: 60px 20px;
@@ -394,7 +394,7 @@ header div {
 
     .about-me::before {
         top: -10px;
-        right: 5px;
+        right: 10px;
         width: 30px;
         height: 30px;
     }
@@ -402,6 +402,7 @@ header div {
     #my-image {
         width: 30px;
         height: 30px;
+        right: 20px;
     }
 
     .about-me h1 {
@@ -517,7 +518,7 @@ header div {
 }
 
 
-@media (max-width:414px) {
+@media (max-width:430px) {
     .my-skills {
         overflow-x: hidden;
         padding: 0 20px 50px;
@@ -540,11 +541,12 @@ header div {
     .my-skills ul li {
         margin-right: 20px;
         animation: showskills 6s ease-in-out infinite;
+        transition: 0.3s ease-in-out;
     }
 
     @keyframes showskills {
         0% {
-            transform: translateX(-400px);
+            transform: translateX(-475px);
         }
 
         50% {
@@ -552,7 +554,7 @@ header div {
         }
 
         100%{
-            transform: translateX(400px);
+            transform: translateX(450px);
         }
     }
 
@@ -621,7 +623,7 @@ header div {
 }
 
 
-@media (max-width:414px) {
+@media (max-width:430px) {
     .my-services {
         padding: 0 20px;
     }
@@ -692,10 +694,11 @@ header div {
     scroll-snap-type: x mandatory;
 }
 
-
 .slide-container::-webkit-scrollbar {
     display: none;
 }
+
+
 
 .slide {
     scroll-snap-align: center;
@@ -807,26 +810,9 @@ header div {
 }
 
 
-.slide-direction > * {
-    width: 8px;
-    height: 8px;
-    border: 1px solid var(--blue);
-    border-top: 0;
-
-}
-
-.slide-direction span:first-of-type {
-    border-right: 0;
-    transform: rotate(45deg);
-}
-
-.slide-direction span:nth-of-type(2) {
-    border-left: 0;
-    transform: rotate(-45deg);
-}
 
 
-@media (max-width:414px) {
+@media (max-width:430px) {
 
     .previous-projects {
         padding: 20px;
@@ -845,9 +831,8 @@ header div {
         gap: 20px;
     }
 
-
     .slide-container::-webkit-scrollbar {
-        display: none;
+        display: block;
     }
 
     .slide {
@@ -895,22 +880,12 @@ header div {
     }
 
     #live-site {
-        width: 200px;
+        width: 170px;
     }
 
-
-    .slide-direction {
-        height: 20px;
-        padding: 10px 20px;
-    }
-
-    .slide-direction > * {
-        font-size: 12px;
-        letter-spacing: 1px;
-    }
 }
 
-@media (min-width:415px) and (max-width:912px) {
+@media (min-width:431px) and (max-width:912px) {
     .previous-projects {
         padding: 20px 100px;
         margin: 150px 0;
@@ -1059,7 +1034,7 @@ footer p {
 }
 
 
-@media (max-width:414px) {
+@media (max-width:430px) {
 
     footer {
         padding: 20px;
