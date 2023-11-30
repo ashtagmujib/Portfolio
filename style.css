@@ -24,7 +24,7 @@
 body {
     position: relative;
     display: block;
-    width: 1440px;
+    width: auto;
     height: auto;
     margin: 0 auto;
 
@@ -34,8 +34,9 @@ body {
 }
 
 .container {
-    width: 100%;
+    width: 1440px;
     height: auto;
+    margin: 0 auto;
 }
 
 @media (max-width:430px) {
@@ -43,12 +44,16 @@ body {
         width: 100vw;
         height: auto;
     }
+
+    .container {
+        width: 375px;
+    }
 }
 
 
 /*start of header section*/
 header {
-    width :100%;
+    width :1440px;
     height: auto;
 
     display: flex;
@@ -123,7 +128,8 @@ header div {
 
 @media (max-width:430px) {
     header {
-        padding: 20px;
+        width: 375px;
+        padding: 20px 15px;
     }
 
     header h1 {
@@ -145,7 +151,7 @@ header div {
 
 /*start of introduction section*/
 .introduction {
-    width: 100%;
+    width: 1440px;
     height: auto;
     margin-top: 50px;
     margin-bottom: 150px;
@@ -206,6 +212,7 @@ header div {
 
 @media (max-width:430px) {
     .introduction {
+        width: 375px;
         margin-top: 30px;
         margin-bottom: 0;
         padding: 10px 10px 50px;
@@ -261,7 +268,7 @@ header div {
     position: relative;
     display: block;
     margin-top: 200px;
-    width: 100%;
+    width: 1440px;
     height: auto;
     padding: 100px 100px;
 }
@@ -388,6 +395,7 @@ header div {
 
 @media (max-width:430px) {
     .about-me {
+        width: 375px;
         margin-top: 100px;
         padding: 60px 20px;
     }
@@ -454,7 +462,7 @@ header div {
 
 .my-skills {
     position: relative;
-    width: 100%;
+    width: 1440px;
     height: auto;
     margin: 150px 0;
     padding: 20px 100px;
@@ -520,6 +528,7 @@ header div {
 
 @media (max-width:430px) {
     .my-skills {
+        width: 375px;
         overflow-x: hidden;
         padding: 0 20px 50px;
     }
@@ -565,7 +574,7 @@ header div {
 /*end of my skills section*/
 
 .my-services {
-    width: 100%;
+    width: 1440px;
     height: auto;
     padding: 0 100px;
     margin: 150px 0;
@@ -625,6 +634,7 @@ header div {
 
 @media (max-width:430px) {
     .my-services {
+        width: 375px;
         padding: 0 20px;
     }
 
@@ -655,7 +665,7 @@ header div {
 
 /*start of previous projects section*/
 .previous-projects {
-    width: 100%;
+    width: 1440px;
     height: auto;
     padding: 20px 20px;
     margin: 200px 0;
@@ -815,6 +825,7 @@ header div {
 @media (max-width:430px) {
 
     .previous-projects {
+        width:375px;
         padding: 20px;
         margin: 150px 0;
     }
@@ -973,7 +984,7 @@ header div {
 /* start of footer section*/
 
 footer {
-    width: 100%;
+    width: 1440px;
     display: block;
     position: relative;
     padding: 20px 100px 0;
@@ -1037,6 +1048,7 @@ footer p {
 @media (max-width:430px) {
 
     footer {
+        width: 375px;
         padding: 20px;
     } 
 
