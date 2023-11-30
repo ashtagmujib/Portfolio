@@ -459,7 +459,7 @@ header div {
 
 
 
- /*start of my skills section*/
+/*start of my skills section*/
 
 .my-skills {
     position: relative;
@@ -1147,6 +1147,91 @@ footer p {
 
     footer {
         width: 760px;
+        padding: 25px;
+    }
+
+    .contact-address {
+        width: 70%;
+    }
+    
+}
+
+
+@media(min-width:1200px) and (max-width:1439px) {
+  
+    .container {
+        width: 1200px;
+        overflow-x: hidden;
+    }
+
+    header {
+        width:1200px;
+        padding: 50px 25px;
+    }
+
+    .introduction div:first-of-type::after {
+        width: 900px;
+    }
+
+    .introduction {
+        width: 1200px;
+        padding: 10px 25px;
+    }
+
+
+
+    .about-me {
+        width: 1200px;
+        padding: 100px 25px;
+    }
+
+
+    .about-me::before {
+        top: -10px;
+        right: 20px;
+    }
+    
+    #my-image {
+        position: absolute;
+        top: 0;
+        right: 30px;
+    }
+
+
+    .my-skills {
+        width: 1200px;
+        padding: 20px 25px;
+    }
+
+
+    .my-services {
+        width: 1200px;
+        padding: 0px 25px;
+    }
+
+
+    
+    .my-services button {
+        width: 70%;
+        height: 40px;
+        border-radius: 5px;
+        margin: 50px 17%;
+    }
+
+
+    .previous-projects {
+        width: 1200px;
+    }
+
+
+    .slide-container {
+        display:flex;
+        gap: 25px;
+    }
+    
+
+    footer {
+        width: 1200px;
         padding: 25px;
     }
 
