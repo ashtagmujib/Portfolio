@@ -51,6 +51,7 @@ body {
 }
 
 
+
 /*start of header section*/
 header {
     width :1440px;
@@ -235,7 +236,7 @@ header div {
         top: 246px;
         left: 14px;
         right: 0;
-        width: 250px;
+        width: 300px;
         height: 3px;
     }
 
@@ -811,6 +812,7 @@ header div {
 
     display: flex;
     align-items: center;
+    
     justify-content: space-between;
 
     border: 1px solid var(--blue);
@@ -896,7 +898,7 @@ header div {
 
 }
 
-@media (min-width:431px) and (max-width:912px) {
+@media (min-width:431px) and (max-width:759px) {
     .previous-projects {
         padding: 20px 100px;
         margin: 150px 0;
@@ -1065,3 +1067,91 @@ footer p {
 
 
 
+
+@media(min-width:760px) and (max-width:900px) {
+  
+    .container {
+        width: 760px;
+        overflow-x: hidden;
+    }
+
+    header {
+        width:760px;
+        padding: 50px 25px;
+    }
+
+    .introduction div:first-of-type::after {
+        width: 600px;
+    }
+
+    .introduction {
+        width: 760px;
+        padding: 10px 25px;
+    }
+
+
+
+    .about-me {
+        width: 760px;
+        padding: 100px 25px;
+    }
+
+
+    .about-me::before {
+        top: -10px;
+        right: 20px;
+    }
+    
+    #my-image {
+        position: absolute;
+        top: 0;
+        right: 30px;
+    }
+
+
+    .my-skills {
+        width: 760px;
+        padding: 20px 25px;
+    }
+
+
+    .my-services {
+        width: 760px;
+        padding: 0px 25px;
+    }
+
+
+    
+    .my-services button {
+        width: 70%;
+        height: 40px;
+        border-radius: 5px;
+        margin: 50px 17%;
+    }
+
+
+    .previous-projects {
+        width: 760px;
+    }
+
+
+    .slide-container {
+        display:flex;
+        gap: 25px;
+    }
+    
+    .slide-container::-webkit-scrollbar {
+        display: block;
+    }
+    
+
+    footer {
+        width: 760px;
+        padding: 25px;
+    }
+
+    .contact-address {
+        width: 70%;
+    }
+    
+}
