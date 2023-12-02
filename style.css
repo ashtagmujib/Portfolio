@@ -23,9 +23,6 @@
 
 body {
     position: relative;
-    display: block;
-    width: auto;
-    height: auto;
     margin: 0 auto;
 
     background-color: #fff;
@@ -34,35 +31,30 @@ body {
 }
 
 .container {
-    width: 1440px;
+    width: 100vw;
+    max-width: 1200px;
     height: auto;
     margin: 0 auto;
-}
 
-@media (max-width:430px) {
-    body {
-        width: 100vw;
-        height: auto;
-    }
+    display: grid;
+    place-items: center;
 
-    .container {
-        width: 375px;
-    }
+    overflow-x: hidden;
 }
 
 
 
-/*start of header section*/
 header {
-    width :1440px;
+    width: 100%;
     height: auto;
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    padding:50px 100px;
+    padding: 10px 20px;
 }
+
 
 
 header h1 {
@@ -103,6 +95,7 @@ header h1::before {
 }
 
 
+
 header div {
     width: 30px;
     height: auto;
@@ -121,181 +114,180 @@ header div {
     display: block;
 }
 
-#sun:hover, #moon:hover {
-    cursor: pointer;
-    transform: translateY(2px);
-}
 
 
-@media (max-width:430px) {
-    header {
-        width: 375px;
-        padding: 20px 15px;
-    }
-
-    header h1 {
-        -webkit-text-stroke: 0.3vw var(--background);
-
-    }
-
-    header h1::before {
-        -webkit-text-stroke: 0 var(--background);
-    }
 
 
-}
 
-/*end of header section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
 
 /*start of introduction section*/
 .introduction {
-    width: 1440px;
+    width: 100%;
     height: auto;
-    margin-top: 50px;
-    margin-bottom: 150px;
+    margin-top: 30px;
+    margin-bottom: 0px;
 
     display: flex;
-    padding: 10px 100px;
+    align-items: flex-start;
+    flex-direction: column;
+
+    padding: 10px 20px;
 }
 
 .introduction div:first-of-type {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-image: linear-gradient(to bottom right, #8801DB, #0195F7);
     box-shadow: 4px 4px 40px  var(--blue), 2px 2px 30px 2px #8801DB ;
     margin-right: 20px;
-    position: relative;
 }
 
-.introduction div:first-of-type::before {
+
+.introduction div:last-of-type {
+    width: 90%;
+    height: 220px;
+    position: relative;
+    padding: 30px 0px 0 40px;
+
+}
+
+
+
+
+.introduction div:last-of-type::before {
     content: '';
     position: absolute;
-    top: 60px;
-    left: 30px;
+    top: 0px;
+    left: 14px;
     right: 0;
     width: 3px;
-    height: 370px;
+    height: 220px;
     background-image: linear-gradient(to bottom,#0195F7,#8801DB);
 }
 
-.introduction div:first-of-type::after {
+.introduction div:last-of-type::after {
     content: '';
     position: absolute;
-    top: 430px;
-    left: 30px;
+    bottom: 0px;
+    left: 14px;
     right: 0;
-    width: 700px;
+    width: 100%;
     height: 3px;
     background-image: linear-gradient(to right, #8801DB, #0195F7);
 }
 
+
+
+
 .introduction h1 {
-    font-size: 50px;
     margin-bottom: 10px;
-    margin-top: 100px;
+    font-size: 30px;
+    text-wrap: nowrap;
 }
 
 
 .introduction h2 {
-    font-size: 70px;
+    font-size: 35px;
     margin-bottom: 10px;
+    text-wrap: nowrap;
 }
 
 
 .introduction h3 {
-    font-size: 90px;
+    font-size: 40px;
+    text-wrap: nowrap;
 }
 
 
-@media (max-width:430px) {
-    .introduction {
-        width: 375px;
-        margin-top: 30px;
-        margin-bottom: 0;
-        padding: 10px 10px 50px;
+
+
+
+
+
+
+@media (min-width:570px) {
+    .introduction div:last-of-type::after {
+        width: 60%;
     }
 
-    .introduction div:first-of-type {
-        width: 30px;
-        height: 30px;
-        margin-right: 20px;
-    }
-
-    .introduction div:first-of-type::before {
-        top: 29px;
-        left: 14px;
-        right: 0;
-        height: 220px;
-    }
-
-    .introduction div:first-of-type::after {
-        top: 246px;
-        left: 14px;
-        right: 0;
-        width: 300px;
-        height: 3px;
-    }
 
     .introduction h1 {
-        font-size: 30px;
         margin-bottom: 10px;
-        margin-top: 50px;
+        font-size: 35px;
     }
-
-
+    
+    
     .introduction h2 {
         font-size: 40px;
         margin-bottom: 10px;
     }
-
-
+    
+    
     .introduction h3 {
         font-size: 45px;
     }
-
-    /*end of introduction section*/
 }
 
-/*end of introduction section*/
 
 
 
-/*start of about me section*/
+
+
+
+
 .about-me {
     position: relative;
     display: block;
     margin-top: 200px;
-    width: 1440px;
+    width: 100%;
     height: auto;
-    padding: 100px 100px;
+
+    padding: 50px 20px;
 }
+
+
 
 .about-me::before {
     content: '';
     position: absolute;
     top: -10px;
-    right: 80px;
+    right: 20px;
 
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-image:linear-gradient(to bottom right, #FF351F, #FE9600);
     animation: animateball 4s ease-in-out infinite 2s;
 }
 
+
 #my-image {
-    width: 60px;
-    height: 60px;
+    width: 30px;
+    height: 30px;
     border-radius: 50%;
     background-image:linear-gradient(to bottom right, #8801DB, #0195F7);
 
     position: absolute;
     top: 0;
-    right: 100px;
+    right: 30px;
     animation: animateball 4s ease-in-out infinite;
 }
 
@@ -314,17 +306,21 @@ header div {
 }
 
 
+
+
+
 .about-me h1 {
     text-align: center;
-    font-size: 50px;
-    margin-top: 20px;
+    font-size: 30px;
+    margin-top: 0px;
+    
 }
 
 .about-me p {
     margin-top: 20px;
     line-height: 40px;
     text-align: center;
-    font-size: 25px;
+    font-size: 15px;
 }
 
 .about-me p em {
@@ -333,6 +329,8 @@ header div {
     text-transform: uppercase;
     color: #8801DB;
 }
+
+
 
 
 #learning {
@@ -344,7 +342,7 @@ header div {
 
 #learning h2 {
     position: relative;
-    font-size: 30px;
+    font-size: 20px;
     text-transform: uppercase;
     margin-bottom: 50px;
 }
@@ -353,7 +351,7 @@ header div {
     content: '';
     position: absolute;
     bottom: -10px;
-    left: 240px;
+    left: 200px;
 
     width: 100px;
     height: 2px;
@@ -375,6 +373,8 @@ header div {
     }
 }
 
+
+
 #learning ul {
     list-style: none;
     text-align: left;
@@ -382,92 +382,43 @@ header div {
 
 #learning ul li {
     display: flex;
-    align-items: center;
+    align-items: flex-start;
     font-size: 15px;
     margin-bottom: 20px;
 }
 
 #learning ul li em {
-    font-size: 25px;
+    font-size: 20px;
     margin-right: 20px;
     color:#8801DB ;
     font-style: normal;
 }
 
-@media (max-width:430px) {
-    .about-me {
-        width: 375px;
-        margin-top: 100px;
-        padding: 60px 20px;
-    }
 
-    .about-me::before {
-        top: -10px;
-        right: 10px;
-        width: 30px;
-        height: 30px;
-    }
-
-    #my-image {
-        width: 30px;
-        height: 30px;
-        right: 20px;
-    }
-
-    .about-me h1 {
-        text-align: center;
-        font-size: 25px;
-    }
-
+@media (min-width:992px) {
     .about-me p {
-        margin-top: 20px;
-        line-height: 25px;
-        text-align: center;
-        font-size: 15px;
-    }
-
-    #learning {
-        margin-top: 50px;
-        display: block;
-        text-align: left;
-        padding: 0 10px;
-    }
-
-    #learning h2 {
         font-size: 20px;
-        margin-bottom: 30px;
     }
-
-    #learning h2:after {
-        left: 150px;
-    }
-
-    #learning ul li {
-        font-size: 12px;
-        line-height: 20px;
-    }
-
-    #learning ul li em {
-        font-size: 14px;
-        margin-right: 10px;
-    }
-
 }
 
 
-/*end of about me section*/
 
 
 
-/*start of my skills section*/
+
+
+
 
 .my-skills {
     position: relative;
-    width: 1440px;
+    width: 100%;
     height: auto;
     margin: 150px 0;
-    padding: 20px 100px;
+    padding: 20px;
+    
+    overflow-x: hidden;
 }
+
 
 
 .my-skills::before {
@@ -486,8 +437,10 @@ header div {
     margin-top: 10px;
     margin-bottom: 50px;
     text-align: center;
-    font-size: 40px;
+    font-size: 30px;
 }
+
+
 
 .my-skills ul {
     width: 100%;
@@ -509,97 +462,100 @@ header div {
     background-image: linear-gradient(to right, #8801DB, #0195F7);
     color: var(--background);
     text-align: center;
-    animation: showskills 10s ease-in-out infinite;
+    animation: showskills 6s ease-in-out infinite;
+    transition: 0.3s ease-in-out;
 }
 
 @keyframes showskills {
     0% {
-        transform: translateX(0px);
+        transform: translateX(-150vw);
     }
 
     50% {
         transform: translateX(0px);
     }
 
-    100%,0%{
-        transform: translateX(650px);
+    100%{
+        transform: translateX(100vw);
     }
 }
 
 
-@media (max-width:430px) {
-    .my-skills {
-        width: 375px;
-        overflow-x: hidden;
-        padding: 0 20px 50px;
-    }
 
-    .my-skills::before {
-        left: 35%;
-    }
-
-
-    .my-skills h1 {
-        font-size: 30px;
-    }
-
-    .my-skills ul {
-        justify-content: space-between;
-    }
-
-
-    .my-skills ul li {
-        margin-right: 20px;
-        animation: showskills 6s ease-in-out infinite;
-        transition: 0.3s ease-in-out;
-    }
-
+@media (min-width:992px) {
+    
     @keyframes showskills {
         0% {
-            transform: translateX(-475px);
+            transform: translateX(0px);
         }
 
         50% {
             transform: translateX(0px);
         }
 
-        100%{
-            transform: translateX(450px);
+        100%, 0%{
+            transform: translateX(25vw);
         }
     }
 
+} 
 
-}
 
 
-/*end of my skills section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .my-services {
-    width: 1440px;
+    width: 100%;
     height: auto;
-    padding: 0 100px;
+    padding: 0 20px;
     margin: 150px 0;
 }
 
 .my-services h1 {
     margin-bottom: 30px;
-    font-size: 40px;
+    font-size: 30px;
+}
+
+.my-services ul {
+    margin-left: 50px;
 }
 
 .my-services li {
     margin-bottom: 20px;
-    font-size: 25px;
+    font-size: 15px;
+    opacity: 90%;
+}
+
+.my-services a {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
 }
 
 .my-services button {
-    width: 50%;
+    width: 100%;
     height: 40px;
     border-radius: 5px;
-    margin: 50px 25%;
+    margin-top: 50px;
 
     text-transform: uppercase;
     color: var(--black);
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 700;
     letter-spacing: 2px;
 
@@ -633,43 +589,32 @@ header div {
 }
 
 
-@media (max-width:430px) {
-    .my-services {
-        width: 375px;
-        padding: 0 20px;
+
+
+@media (min-width:992px) {
+    
+    .my-services li,.my-services button {
+        font-size: 20px;
     }
 
-    .my-services h1 {
-        margin-bottom: 30px;
-        font-size: 30px;
-    }
-
-    .my-services li {
-        margin-bottom: 20px;
-        font-size: 14px;
-        margin-left: 20px;
-    }
-
-    .my-services button {
-        width: 100%;
-        margin: 50px 0%;
-        font-size: 15px;
-        font-weight: 600;
-    }
-
-}
-
-/*end of my services section*/
+} 
 
 
 
 
-/*start of previous projects section*/
+
+
+
+
+
+
+
+
 .previous-projects {
-    width: 1440px;
+    width: 100%;
     height: auto;
     padding: 20px 20px;
-    margin: 200px 0;
+    margin: 200px 0 0;
 
     display: flex;
     flex-direction: column;
@@ -678,11 +623,11 @@ header div {
 }
 
 .previous-projects p {
-    width: 40%;
+    width: 80%;
     padding: 10px 0;
     text-align: center;
     text-transform: uppercase;
-    font-size: 20px;
+    font-size: 15px;
     letter-spacing: 2px;
 
     border: 1px solid var(--blue);
@@ -690,6 +635,7 @@ header div {
     border-top-right-radius: 20px;
     border-top-left-radius: 20px;
 }
+
 
 
 .slide-container {
@@ -716,14 +662,15 @@ header div {
 }
 
 .slide-dts {
-    width: 700px;
-    height: 120px;
+    width: 100%;
+    height: auto;
+    padding: 0 10px;
 }
 
 
 .slide .image {
-    width: 700px;
-    height: 250px;
+    width: 100%;
+    height: 220px;
     background-image:linear-gradient(to right, #8801DB, #0195F7);
 
     display: flex;
@@ -731,15 +678,18 @@ header div {
     justify-content: center;
 }
 
+
+
+
 #slide__logo {
-    width: 250px;
+    width: auto;
     height: auto;
 }
 
 .slide h3 {
-    font-size: 23px;
+    font-size: 20px;
     margin-top: 15px;
-    padding-left: 20px;
+    margin-left: 10px;
 }
 
 .slide-dts p {
@@ -748,19 +698,21 @@ header div {
     text-align: left;
     text-transform: none;
     letter-spacing: 0; 
-    font-size: 18px;
+    font-size: 12px;
     line-height: 25px; 
 
-    padding: 15px 20px;
+    padding: 15px 0px 0;
 }
 
 .links {
     width: 100%;
     display: flex;
+    flex-wrap: wrap;
+
     column-gap: 20px;
     align-items: center;
-    padding: 15px 20px;
-    margin: 34px 0;
+    padding: 15px 10px;
+    margin: 20px 0;
 }
 
 .links:hover {
@@ -768,13 +720,19 @@ header div {
 }
 
 .links a {
+    width: 200px;
     text-decoration: none;
     color: var(--background);
 }
 
+
+.links a:not(:last-of-type) {
+    margin-bottom: 10px;
+}
+
+
 #code,#live-site {
-    width: 200px;
-    padding: 10px;
+    padding: 10px 50px;
     background-image: linear-gradient(to bottom right, #8801DB, #0195F7);
     border-radius: 20px;
     text-align: center;
@@ -782,7 +740,6 @@ header div {
 }
 
 #live-site {
-    width: 400px;
     animation: livesite 6s ease-in-out infinite ;
 }
 
@@ -805,197 +762,45 @@ header div {
 }
 
 
-.slide-direction {
-    width: 20%;
-    height: 30px;
-    padding: 0 100px;
-
-    display: flex;
-    align-items: center;
-    
-    justify-content: space-between;
-
-    border: 1px solid var(--blue);
-    border-bottom-left-radius: 20px;
-    border-bottom-right-radius: 20px;
-    border-top: 0;
-}
-
-
-
-
-@media (max-width:430px) {
-
-    .previous-projects {
-        width:375px;
-        padding: 20px;
-        margin: 150px 0;
-    }
-
-    .previous-projects p {
-        width: 70%;
-        padding: 5px 0;
-        font-size: 13px;
-    }
-
-   
-    .slide-container {
-        padding:0 10px 30px;
-        gap: 20px;
-    }
-
-    .slide-container::-webkit-scrollbar {
-        display: block;
-    }
-
-    .slide {
-        scroll-snap-align: start;
-    }
-
-
-    .slide .image {
-        width: 100%;
-        height: 150px;
-    }
-
-    #slide__logo {
-        width: 150px;
-        height: auto;
-    }
-
-    .slide-dts {
-        width: 100%;
-        height: 140px;
-    }
-
-    .slide h3 {
-        font-size: 13px;
-        margin-top: 10px;
-    }
-
-    .slide-dts p {
-        width: 100%;
-        letter-spacing: 0; 
-        line-height: 20px; 
-        padding: 10px 20px;
-    }
-
-
-    .links {
-        padding: 15px 20px 0px;
-        margin: 30px 0 10px;
-    }
-
-
-    #code,#live-site {
-        width: 100px;
-        padding: 5px;
-    }
-
-    #live-site {
-        width: 170px;
-    }
-
-}
-
-@media (min-width:431px) and (max-width:759px) {
-    .previous-projects {
-        padding: 20px 100px;
-        margin: 150px 0;
-    }
-
-    .previous-projects p {
-        width: 30%;
-        padding: 5px 0;
-        font-size: 13px;
-    }
-
-   
-    .slide-container {
-        padding:0 10px 30px;
-        gap: 20px;
-    }
-
-
-    .slide-container::-webkit-scrollbar {
-        display: none;
-    }
-
-    .slide {
-        scroll-snap-align: center;
-    }
-
-
-    .slide .image {
-        width: 600px;
-        height: 230px;
-    }
-
-    .slide-dts {
-        width: 600px;
-        height: 120px;
-    }
-
-    .slide h3 {
-        font-size: 15px;
-        margin-top: 10px;
-    }
-
-    .slide-dts p {
-        width: 100%;
-        font-size: 15px;
-        letter-spacing: 0; 
-        line-height: 20px; 
-        padding: 10px 20px;
-    }
-
-    .links {
-        padding: 15px 20px 0px;
-        margin: 30px 0 20px;
-    }
-
-    #code,#live-site {
-        width: 100px;
-        padding: 5px;
-    }
-
-    #live-site {
-        width: 400px;
-    }
-
-
-    .slide-direction {
-        height: 30px;
-    }
-
-    .slide-direction > * {
-        font-size: 18px;
-    }
-}
-
-
-
-
-/*end of previous projects section*/
 
 
 
 
 
 
-/* start of footer section*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 footer {
-    width: 1440px;
+    width: 100%;
     display: block;
     position: relative;
-    padding: 20px 100px 0;
+    padding: 20px 20px 0;
     margin-top: 150px;
 }
 
 
 .contact-address {
-    width: 50%;
+    width: 100%;
     height: auto;
     margin-top: 30px;
 }
@@ -1047,20 +852,15 @@ footer p {
 }
 
 
-@media (max-width:430px) {
 
-    footer {
-        width: 375px;
-        padding: 20px;
-    } 
 
+@media (min-width:992px) {
     .contact-address {
-        width: 100%;
+        width: 80%;
     }
 }
 
 
-/* end of footer section*/
 
 
 
@@ -1068,175 +868,18 @@ footer p {
 
 
 
-@media(min-width:760px) and (max-width:900px) {
-  
-    .container {
-        width: 760px;
-        overflow-x: hidden;
-    }
-
-    header {
-        width:760px;
-        padding: 50px 25px;
-    }
-
-    .introduction div:first-of-type::after {
-        width: 600px;
-    }
-
-    .introduction {
-        width: 760px;
-        padding: 10px 25px;
-    }
 
 
 
-    .about-me {
-        width: 760px;
-        padding: 100px 25px;
-    }
-
-
-    .about-me::before {
-        top: -10px;
-        right: 20px;
-    }
-    
-    #my-image {
-        position: absolute;
-        top: 0;
-        right: 30px;
-    }
-
-
-    .my-skills {
-        width: 760px;
-        padding: 20px 25px;
-    }
-
-
-    .my-services {
-        width: 760px;
-        padding: 0px 25px;
-    }
-
-
-    
-    .my-services button {
-        width: 70%;
-        height: 40px;
-        border-radius: 5px;
-        margin: 50px 17%;
-    }
-
-
-    .previous-projects {
-        width: 760px;
-    }
-
-
-    .slide-container {
-        display:flex;
-        gap: 25px;
-    }
-    
-    .slide-container::-webkit-scrollbar {
-        display: block;
-    }
-    
-
-    footer {
-        width: 760px;
-        padding: 25px;
-    }
-
-    .contact-address {
-        width: 70%;
-    }
-    
-}
-
-
-@media(min-width:1200px) and (max-width:1439px) {
-  
-    .container {
-        width: 1200px;
-        overflow-x: hidden;
-    }
-
-    header {
-        width:1200px;
-        padding: 50px 25px;
-    }
-
-    .introduction div:first-of-type::after {
-        width: 900px;
-    }
-
-    .introduction {
-        width: 1200px;
-        padding: 10px 25px;
-    }
 
 
 
-    .about-me {
-        width: 1200px;
-        padding: 100px 25px;
-    }
 
 
-    .about-me::before {
-        top: -10px;
-        right: 20px;
-    }
-    
-    #my-image {
-        position: absolute;
-        top: 0;
-        right: 30px;
-    }
 
 
-    .my-skills {
-        width: 1200px;
-        padding: 20px 25px;
-    }
 
 
-    .my-services {
-        width: 1200px;
-        padding: 0px 25px;
-    }
 
 
-    
-    .my-services button {
-        width: 70%;
-        height: 40px;
-        border-radius: 5px;
-        margin: 50px 17%;
-    }
 
-
-    .previous-projects {
-        width: 1200px;
-    }
-
-
-    .slide-container {
-        display:flex;
-        gap: 25px;
-    }
-    
-
-    footer {
-        width: 1200px;
-        padding: 25px;
-    }
-
-    .contact-address {
-        width: 70%;
-    }
-    
-}
