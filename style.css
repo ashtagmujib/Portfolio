@@ -419,6 +419,17 @@ header div {
 }
 
 
+/* .my-skills::after {
+    position: absolute;
+    content: '';
+    top: 60%;
+    left: 0;
+    right: 0;
+    width: 50%;
+    height: 2px;
+    background-image: linear-gradient(to right,#8801DB, #0195F7);
+} */
+
 
 .my-skills::before {
     content: '';
@@ -463,15 +474,16 @@ header div {
     text-align: center;
     animation: showskills 6s ease-in-out infinite;
     transition: 0.3s ease-in-out;
+    z-index: 2;
 }
 
 @keyframes showskills {
-    0% {
+    0%{
         transform: translateX(-150vw);
     }
 
     50% {
-        transform: translateX(0px);
+        transform: translateX(0vw);
     }
 
     100%{
